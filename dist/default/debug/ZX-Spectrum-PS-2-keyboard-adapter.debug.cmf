@@ -1,0 +1,753 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/debug/main.o
+MainCode CODE 0 86 86 19D 2 1
+MainData COMMON 1 70 70 7 1 1
+IsrVec CODE 0 4 4 82 2 1
+PorVec CODE 0 0 0 2 1 2
+config CONFIG 4 8007 8007 4 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 20-6F 1
+RAM A0-EF 1
+RAM 120-16F 1
+RAM 1A0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-64F 1
+BANK0 20-6F 1
+BANK1 A0-EF 1
+BANK2 120-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 1-3 2
+CONST 223-1FFF 2
+ENTRY 1-3 2
+ENTRY 223-1FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+CODE 1-3 2
+CODE 223-1FFF 2
+SFR0 2-7 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-64F 1
+BIGRAM 2000-23EF 1
+COMMON 77-7F 1
+EEDATA F000-F0FF 2
+STRCODE 1-3 2
+STRCODE 223-1FFF 2
+STRING 1-3 2
+STRING 223-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/debug/main.o
+86 MainCode CODE >229:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+87 MainCode CODE >230:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+88 MainCode CODE >231:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+89 MainCode CODE >232:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+8A MainCode CODE >233:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+8B MainCode CODE >234:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+8C MainCode CODE >235:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+8D MainCode CODE >236:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+8E MainCode CODE >239:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+8F MainCode CODE >240:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+90 MainCode CODE >241:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+91 MainCode CODE >242:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+92 MainCode CODE >243:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+93 MainCode CODE >244:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+94 MainCode CODE >245:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+95 MainCode CODE >248:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+96 MainCode CODE >249:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+97 MainCode CODE >250:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+98 MainCode CODE >251:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+99 MainCode CODE >252:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+9A MainCode CODE >253:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+9B MainCode CODE >254:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+9C MainCode CODE >257:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+9D MainCode CODE >258:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+9E MainCode CODE >260:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+9F MainCode CODE >261:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+A0 MainCode CODE >262:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+A1 MainCode CODE >263:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+A2 MainCode CODE >264:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+A3 MainCode CODE >266:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+A4 MainCode CODE >267:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+A5 MainCode CODE >268:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+A6 MainCode CODE >269:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+A7 MainCode CODE >271:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+A8 MainCode CODE >272:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+A9 MainCode CODE >273:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+AA MainCode CODE >275:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+AB MainCode CODE >276:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+AC MainCode CODE >278:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+AD MainCode CODE >281:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+AE MainCode CODE >282:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+AF MainCode CODE >284:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+B0 MainCode CODE >285:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+B1 MainCode CODE >286:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+B2 MainCode CODE >287:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+B3 MainCode CODE >288:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+B4 MainCode CODE >292:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+B5 MainCode CODE >293:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+B6 MainCode CODE >294:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+B7 MainCode CODE >295:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+B8 MainCode CODE >296:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+B9 MainCode CODE >298:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+BA MainCode CODE >299:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+BB MainCode CODE >300:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+BC MainCode CODE >301:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+BD MainCode CODE >302:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+BE MainCode CODE >303:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+BF MainCode CODE >304:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+C0 MainCode CODE >305:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+C1 MainCode CODE >306:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+C2 MainCode CODE >308:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+C3 MainCode CODE >309:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+C4 MainCode CODE >310:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+C5 MainCode CODE >311:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+C6 MainCode CODE >312:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+C7 MainCode CODE >313:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+C8 MainCode CODE >315:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+C9 MainCode CODE >316:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+CA MainCode CODE >317:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+CB MainCode CODE >318:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+CC MainCode CODE >320:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+CD MainCode CODE >321:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+CE MainCode CODE >322:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+CF MainCode CODE >323:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+D0 MainCode CODE >325:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+D1 MainCode CODE >326:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+D2 MainCode CODE >327:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+D3 MainCode CODE >328:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+D4 MainCode CODE >330:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+D5 MainCode CODE >331:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+D6 MainCode CODE >332:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+D7 MainCode CODE >333:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+D8 MainCode CODE >335:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+D9 MainCode CODE >336:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+DA MainCode CODE >337:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+DB MainCode CODE >338:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+DC MainCode CODE >339:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+DD MainCode CODE >341:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+DE MainCode CODE >342:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+DF MainCode CODE >343:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+E0 MainCode CODE >344:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+E1 MainCode CODE >346:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+E2 MainCode CODE >347:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+E3 MainCode CODE >348:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+E4 MainCode CODE >350:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+E5 MainCode CODE >351:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+E6 MainCode CODE >353:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+E7 MainCode CODE >354:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+E8 MainCode CODE >355:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+E9 MainCode CODE >356:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+EA MainCode CODE >358:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+EB MainCode CODE >367:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+EC MainCode CODE >368:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+ED MainCode CODE >369:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+EE MainCode CODE >370:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+EF MainCode CODE >371:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+F0 MainCode CODE >372:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+F1 MainCode CODE >373:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+F2 MainCode CODE >374:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+F3 MainCode CODE >375:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+F4 MainCode CODE >376:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+F5 MainCode CODE >377:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+F6 MainCode CODE >378:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+F7 MainCode CODE >379:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+F8 MainCode CODE >380:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+F9 MainCode CODE >381:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+FA MainCode CODE >382:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+FB MainCode CODE >383:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+FC MainCode CODE >384:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+FD MainCode CODE >385:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+FE MainCode CODE >386:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+FF MainCode CODE >387:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+100 MainCode CODE >388:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+101 MainCode CODE >389:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+102 MainCode CODE >390:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+103 MainCode CODE >391:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+104 MainCode CODE >392:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+105 MainCode CODE >393:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+106 MainCode CODE >394:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+107 MainCode CODE >395:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+108 MainCode CODE >396:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+109 MainCode CODE >397:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+10A MainCode CODE >398:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+10B MainCode CODE >399:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+10C MainCode CODE >400:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+10D MainCode CODE >401:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+10E MainCode CODE >402:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+10F MainCode CODE >403:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+110 MainCode CODE >404:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+111 MainCode CODE >405:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+112 MainCode CODE >406:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+113 MainCode CODE >407:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+114 MainCode CODE >410:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+115 MainCode CODE >411:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+116 MainCode CODE >412:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+117 MainCode CODE >413:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+118 MainCode CODE >414:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+119 MainCode CODE >415:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+11A MainCode CODE >416:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+11B MainCode CODE >419:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+11C MainCode CODE >420:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+11D MainCode CODE >421:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+11E MainCode CODE >422:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+11F MainCode CODE >423:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+120 MainCode CODE >424:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+121 MainCode CODE >425:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+122 MainCode CODE >429:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+123 MainCode CODE >430:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+124 MainCode CODE >431:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+125 MainCode CODE >432:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+126 MainCode CODE >433:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+127 MainCode CODE >434:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+128 MainCode CODE >435:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+129 MainCode CODE >436:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+12A MainCode CODE >437:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+12B MainCode CODE >438:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+12C MainCode CODE >439:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+12D MainCode CODE >440:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+12E MainCode CODE >441:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+12F MainCode CODE >442:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+130 MainCode CODE >443:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+131 MainCode CODE >444:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+132 MainCode CODE >445:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+133 MainCode CODE >446:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+134 MainCode CODE >447:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+135 MainCode CODE >448:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+136 MainCode CODE >449:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+137 MainCode CODE >450:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+138 MainCode CODE >451:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+139 MainCode CODE >452:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+13A MainCode CODE >453:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+13B MainCode CODE >454:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+13C MainCode CODE >455:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+13D MainCode CODE >456:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+13E MainCode CODE >457:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+13F MainCode CODE >458:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+140 MainCode CODE >459:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+141 MainCode CODE >460:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+142 MainCode CODE >461:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+143 MainCode CODE >462:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+144 MainCode CODE >463:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+145 MainCode CODE >464:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+146 MainCode CODE >465:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+147 MainCode CODE >466:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+148 MainCode CODE >467:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+149 MainCode CODE >468:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+14A MainCode CODE >469:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+14B MainCode CODE >470:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+14C MainCode CODE >471:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+14D MainCode CODE >472:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+14E MainCode CODE >473:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+14F MainCode CODE >474:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+150 MainCode CODE >475:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+151 MainCode CODE >476:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+152 MainCode CODE >477:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+153 MainCode CODE >478:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+154 MainCode CODE >479:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+155 MainCode CODE >480:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+156 MainCode CODE >481:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+157 MainCode CODE >482:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+158 MainCode CODE >483:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+159 MainCode CODE >484:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+15A MainCode CODE >485:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+15B MainCode CODE >486:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+15C MainCode CODE >487:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+15D MainCode CODE >488:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+15E MainCode CODE >489:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+15F MainCode CODE >490:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+160 MainCode CODE >491:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+161 MainCode CODE >492:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+162 MainCode CODE >493:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+163 MainCode CODE >494:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+164 MainCode CODE >495:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+165 MainCode CODE >496:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+166 MainCode CODE >497:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+167 MainCode CODE >498:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+168 MainCode CODE >499:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+169 MainCode CODE >500:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+16A MainCode CODE >501:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+16B MainCode CODE >502:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+16C MainCode CODE >503:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+16D MainCode CODE >504:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+16E MainCode CODE >505:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+16F MainCode CODE >506:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+170 MainCode CODE >507:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+171 MainCode CODE >508:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+172 MainCode CODE >509:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+173 MainCode CODE >510:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+174 MainCode CODE >511:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+175 MainCode CODE >512:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+176 MainCode CODE >513:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+177 MainCode CODE >514:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+178 MainCode CODE >515:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+179 MainCode CODE >516:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+17A MainCode CODE >517:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+17B MainCode CODE >518:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+17C MainCode CODE >519:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+17D MainCode CODE >520:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+17E MainCode CODE >521:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+17F MainCode CODE >522:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+180 MainCode CODE >523:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+181 MainCode CODE >524:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+182 MainCode CODE >525:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+183 MainCode CODE >526:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+184 MainCode CODE >527:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+185 MainCode CODE >528:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+186 MainCode CODE >529:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+187 MainCode CODE >530:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+188 MainCode CODE >531:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+189 MainCode CODE >532:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+18A MainCode CODE >533:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+18B MainCode CODE >534:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+18C MainCode CODE >535:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+18D MainCode CODE >536:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+18E MainCode CODE >537:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+18F MainCode CODE >538:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+190 MainCode CODE >539:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+191 MainCode CODE >540:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+192 MainCode CODE >541:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+193 MainCode CODE >542:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+194 MainCode CODE >543:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+195 MainCode CODE >544:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+196 MainCode CODE >545:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+197 MainCode CODE >546:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+198 MainCode CODE >547:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+199 MainCode CODE >548:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+19A MainCode CODE >549:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+19B MainCode CODE >550:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+19C MainCode CODE >551:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+19D MainCode CODE >552:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+19E MainCode CODE >553:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+19F MainCode CODE >554:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1A0 MainCode CODE >555:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1A1 MainCode CODE >556:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1A2 MainCode CODE >557:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1A3 MainCode CODE >558:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1A4 MainCode CODE >559:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1A5 MainCode CODE >560:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1A6 MainCode CODE >561:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1A7 MainCode CODE >562:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1A8 MainCode CODE >563:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1A9 MainCode CODE >564:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1AA MainCode CODE >565:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1AB MainCode CODE >566:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1AC MainCode CODE >567:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1AD MainCode CODE >568:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1AE MainCode CODE >569:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1AF MainCode CODE >570:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1B0 MainCode CODE >571:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1B1 MainCode CODE >572:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1B2 MainCode CODE >573:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1B3 MainCode CODE >574:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1B4 MainCode CODE >575:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1B5 MainCode CODE >576:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1B6 MainCode CODE >577:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1B7 MainCode CODE >578:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1B8 MainCode CODE >579:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1B9 MainCode CODE >580:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1BA MainCode CODE >581:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1BB MainCode CODE >582:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1BC MainCode CODE >583:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1BD MainCode CODE >584:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1BE MainCode CODE >585:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1BF MainCode CODE >586:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1C0 MainCode CODE >587:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1C1 MainCode CODE >588:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1C2 MainCode CODE >589:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1C3 MainCode CODE >590:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1C4 MainCode CODE >591:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1C5 MainCode CODE >592:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1C6 MainCode CODE >593:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1C7 MainCode CODE >594:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1C8 MainCode CODE >595:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1C9 MainCode CODE >596:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1CA MainCode CODE >597:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1CB MainCode CODE >598:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1CC MainCode CODE >599:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1CD MainCode CODE >600:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1CE MainCode CODE >601:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1CF MainCode CODE >602:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1D0 MainCode CODE >603:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1D1 MainCode CODE >604:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1D2 MainCode CODE >605:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1D3 MainCode CODE >606:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1D4 MainCode CODE >607:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1D5 MainCode CODE >608:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1D6 MainCode CODE >609:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1D7 MainCode CODE >610:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1D8 MainCode CODE >611:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1D9 MainCode CODE >612:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1DA MainCode CODE >613:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1DB MainCode CODE >614:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1DC MainCode CODE >615:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1DD MainCode CODE >616:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1DE MainCode CODE >617:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1DF MainCode CODE >618:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1E0 MainCode CODE >619:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1E1 MainCode CODE >620:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1E2 MainCode CODE >621:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1E3 MainCode CODE >622:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1E4 MainCode CODE >623:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1E5 MainCode CODE >624:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1E6 MainCode CODE >625:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1E7 MainCode CODE >626:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1E8 MainCode CODE >627:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1E9 MainCode CODE >628:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1EA MainCode CODE >629:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1EB MainCode CODE >630:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1EC MainCode CODE >631:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1ED MainCode CODE >632:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1EE MainCode CODE >633:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1EF MainCode CODE >634:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1F0 MainCode CODE >635:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1F1 MainCode CODE >636:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1F2 MainCode CODE >637:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1F3 MainCode CODE >638:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1F4 MainCode CODE >639:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1F5 MainCode CODE >640:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1F6 MainCode CODE >641:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1F7 MainCode CODE >642:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1F8 MainCode CODE >643:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1F9 MainCode CODE >644:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1FA MainCode CODE >645:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1FB MainCode CODE >646:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1FC MainCode CODE >647:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1FD MainCode CODE >648:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1FE MainCode CODE >649:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1FF MainCode CODE >650:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+200 MainCode CODE >651:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+201 MainCode CODE >652:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+202 MainCode CODE >653:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+203 MainCode CODE >654:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+204 MainCode CODE >655:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+205 MainCode CODE >656:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+206 MainCode CODE >657:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+207 MainCode CODE >658:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+208 MainCode CODE >659:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+209 MainCode CODE >660:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+20A MainCode CODE >661:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+20B MainCode CODE >662:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+20C MainCode CODE >663:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+20D MainCode CODE >664:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+20E MainCode CODE >665:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+20F MainCode CODE >666:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+210 MainCode CODE >667:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+211 MainCode CODE >668:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+212 MainCode CODE >669:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+213 MainCode CODE >670:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+214 MainCode CODE >671:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+215 MainCode CODE >672:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+216 MainCode CODE >673:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+217 MainCode CODE >674:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+218 MainCode CODE >675:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+219 MainCode CODE >676:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+21A MainCode CODE >677:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+21B MainCode CODE >678:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+21C MainCode CODE >679:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+21D MainCode CODE >680:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+21E MainCode CODE >681:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+21F MainCode CODE >682:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+220 MainCode CODE >683:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+221 MainCode CODE >684:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+222 MainCode CODE >685:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+4 IsrVec CODE >47:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+5 IsrVec CODE >48:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+6 IsrVec CODE >49:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+7 IsrVec CODE >51:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+8 IsrVec CODE >52:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+9 IsrVec CODE >54:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+A IsrVec CODE >55:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+B IsrVec CODE >56:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+C IsrVec CODE >57:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+D IsrVec CODE >59:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+E IsrVec CODE >60:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+F IsrVec CODE >61:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+10 IsrVec CODE >62:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+11 IsrVec CODE >63:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+12 IsrVec CODE >64:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+13 IsrVec CODE >65:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+14 IsrVec CODE >67:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+15 IsrVec CODE >68:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+16 IsrVec CODE >69:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+17 IsrVec CODE >70:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+18 IsrVec CODE >71:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+19 IsrVec CODE >72:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1A IsrVec CODE >74:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1B IsrVec CODE >75:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1C IsrVec CODE >76:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1D IsrVec CODE >77:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1E IsrVec CODE >80:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+1F IsrVec CODE >81:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+20 IsrVec CODE >82:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+21 IsrVec CODE >83:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+22 IsrVec CODE >84:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+23 IsrVec CODE >85:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+24 IsrVec CODE >86:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+25 IsrVec CODE >88:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+26 IsrVec CODE >89:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+27 IsrVec CODE >90:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+28 IsrVec CODE >91:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+29 IsrVec CODE >92:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+2A IsrVec CODE >93:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+2B IsrVec CODE >95:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+2C IsrVec CODE >96:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+2D IsrVec CODE >97:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+2E IsrVec CODE >98:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+2F IsrVec CODE >99:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+30 IsrVec CODE >101:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+31 IsrVec CODE >102:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+32 IsrVec CODE >103:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+33 IsrVec CODE >104:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+34 IsrVec CODE >105:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+35 IsrVec CODE >107:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+36 IsrVec CODE >108:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+37 IsrVec CODE >109:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+38 IsrVec CODE >110:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+39 IsrVec CODE >113:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+3A IsrVec CODE >114:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+3B IsrVec CODE >115:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+3C IsrVec CODE >116:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+3D IsrVec CODE >117:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+3E IsrVec CODE >118:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+3F IsrVec CODE >119:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+40 IsrVec CODE >120:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+41 IsrVec CODE >121:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+42 IsrVec CODE >123:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+43 IsrVec CODE >124:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+44 IsrVec CODE >125:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+45 IsrVec CODE >126:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+46 IsrVec CODE >127:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+47 IsrVec CODE >129:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+48 IsrVec CODE >130:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+49 IsrVec CODE >132:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+4A IsrVec CODE >133:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+4B IsrVec CODE >134:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+4C IsrVec CODE >135:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+4D IsrVec CODE >137:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+4E IsrVec CODE >138:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+4F IsrVec CODE >139:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+50 IsrVec CODE >140:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+51 IsrVec CODE >141:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+52 IsrVec CODE >143:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+53 IsrVec CODE >144:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+54 IsrVec CODE >146:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+55 IsrVec CODE >147:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+56 IsrVec CODE >148:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+57 IsrVec CODE >149:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+58 IsrVec CODE >151:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+59 IsrVec CODE >152:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+5A IsrVec CODE >153:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+5B IsrVec CODE >154:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+5C IsrVec CODE >155:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+5D IsrVec CODE >157:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+5E IsrVec CODE >158:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+5F IsrVec CODE >160:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+60 IsrVec CODE >161:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+61 IsrVec CODE >162:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+62 IsrVec CODE >163:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+63 IsrVec CODE >165:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+64 IsrVec CODE >166:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+65 IsrVec CODE >167:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+66 IsrVec CODE >168:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+67 IsrVec CODE >169:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+68 IsrVec CODE >171:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+69 IsrVec CODE >172:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+6A IsrVec CODE >174:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+6B IsrVec CODE >175:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+6C IsrVec CODE >176:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+6D IsrVec CODE >177:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+6E IsrVec CODE >179:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+6F IsrVec CODE >180:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+70 IsrVec CODE >181:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+71 IsrVec CODE >182:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+72 IsrVec CODE >183:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+73 IsrVec CODE >184:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+74 IsrVec CODE >185:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+75 IsrVec CODE >187:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+76 IsrVec CODE >188:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+77 IsrVec CODE >189:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+78 IsrVec CODE >190:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+79 IsrVec CODE >191:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+7A IsrVec CODE >192:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+7B IsrVec CODE >193:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+7C IsrVec CODE >196:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+7D IsrVec CODE >197:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+7E IsrVec CODE >198:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+7F IsrVec CODE >199:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+80 IsrVec CODE >200:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+81 IsrVec CODE >203:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+82 IsrVec CODE >204:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+83 IsrVec CODE >205:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+84 IsrVec CODE >206:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+85 IsrVec CODE >207:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+0 PorVec CODE >42:C:\Users\jkl\MPLABXProjects\ZX-Spectrum-PS-2-keyboard-adapter\main.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 223 0 ABS 0 - -
+__Hspace_1 77 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 10012 0 ABS 0 - -
+__Hudata_bank0 10C 0 ABS 0 udata_bank0 -
+__Hudata_bank1 10C 0 ABS 0 udata_bank1 -
+__Hudata_bank2 10C 0 ABS 0 udata_bank2 -
+__Hudata_bank3 10C 0 ABS 0 udata_bank3 -
+__Hudata_bank4 10C 0 ABS 0 udata_bank4 -
+__Hudata_bank5 10C 0 ABS 0 udata_bank5 -
+__Hudata_bank6 10C 0 ABS 0 udata_bank6 -
+__Hudata_bank7 10C 0 ABS 0 udata_bank7 -
+__Hudata_bank8 10C 0 ABS 0 udata_bank8 -
+__Hudata_bank9 10C 0 ABS 0 udata_bank9 -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+__HIsrVec 10C 0 CODE 0 IsrVec -
+__HPorVec 2 0 CODE 0 PorVec -
+__Hudata_bank10 10C 0 ABS 0 udata_bank10 -
+__Hudata_bank11 10C 0 ABS 0 udata_bank11 -
+__Hudata_bank12 10C 0 ABS 0 udata_bank12 -
+__LIsrVec 8 0 CODE 0 IsrVec -
+__Hedata 10C 0 ABS 0 edata -
+__Hudata 10C 0 ABS 0 udata -
+__Hconfig 10016 0 CONFIG 4 config -
+__Ledata 10C 0 ABS 0 edata -
+__Ludata 10C 0 ABS 0 udata -
+__LPorVec 0 0 CODE 0 PorVec -
+__Hcode 10C 0 ABS 0 code -
+__Hdata 10C 0 ABS 0 data -
+__Lcode 10C 0 ABS 0 code -
+__Ldata 10C 0 ABS 0 data -
+__S0 223 0 ABS 0 - -
+__S1 77 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Ludata_bank10 10C 0 ABS 0 udata_bank10 -
+__Ludata_bank11 10C 0 ABS 0 udata_bank11 -
+__Ludata_bank12 10C 0 ABS 0 udata_bank12 -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__LMainCode 10C 0 ABS 0 MainCode -
+__LMainData 10C 0 ABS 0 MainData -
+__Ludata_bank0 10C 0 ABS 0 udata_bank0 -
+__Ludata_bank1 10C 0 ABS 0 udata_bank1 -
+__Ludata_bank2 10C 0 ABS 0 udata_bank2 -
+__Ludata_bank3 10C 0 ABS 0 udata_bank3 -
+__Ludata_bank4 10C 0 ABS 0 udata_bank4 -
+__Ludata_bank5 10C 0 ABS 0 udata_bank5 -
+__Ludata_bank6 10C 0 ABS 0 udata_bank6 -
+__Ludata_bank7 10C 0 ABS 0 udata_bank7 -
+__Ludata_bank8 10C 0 ABS 0 udata_bank8 -
+__Ludata_bank9 10C 0 ABS 0 udata_bank9 -
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__HMainCode 10C 0 ABS 0 MainCode -
+__HMainData 10C 0 ABS 0 MainData -
+__Hudata_shr 10C 0 ABS 0 udata_shr -
+__Ludata_shr 10C 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+MainData 1 70 70 7 1
+IsrVec 0 4 8 21F 2
+PorVec 0 0 0 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
