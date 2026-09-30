@@ -11,7 +11,6 @@ DM164141 evaluation board connects to your PC as a USB Flash drive.
 So copy dist/default/debug/ZX-Spectrum-PS-2-keyboard-adapter.debug.hex
 into this drive and PIC16F18345 will be programmed instantly.
 ## Wiring
-connect AT-keyboard clock to RB6
-connect AT-keyboard data to RB5
-connect ZX address lines A8-A15 to RC0-RC7 terminals on DM164141
+connect AT-keyboard clock to RB6, connect AT-keyboard data to RB5,
+connect ZX address lines A8-A15 to RC0-RC7 terminals on DM164141,
 connect ZX data lines D0-D4 to RA0-RA2,RA4,RA5
