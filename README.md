@@ -15,3 +15,7 @@ connect AT-keyboard CLOCK to RB6, connect AT-keyboard DATA to RB5,
 connect ZX address lines A8-A15 to RC0-RC7 terminals on DM164141,
 connect ZX data lines D0-D4 to RA0-RA2,RA4,RA5.
 Don't forget to desolder 3.3V jumper pads and solder 5V ones
+## Design limitations
+Pin's PPS register defines _only_ output source. So if more than
+one key belongs to same ZX80 data line pressed ZX Spectrum will 
+see only one pressed last.
