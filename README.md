@@ -18,4 +18,4 @@ Don't forget to desolder 3.3V jumper pads and solder 5V ones
 ## Design limitations
 Pin's PPS register defines _only_ output source. So if more than
 one key belongs to same ZX80 data line pressed at once ZX Spectrum 
-will "see" only one pressed last no matter others still pressed.
+will "see" only one (pressed last) no matter others still pressed.
