@@ -234,6 +234,9 @@ main:
     BANKSEL TRISA		;
     MOVLW   11111111B		;
     MOVWF   TRISA		;
+    banksel ODCONA
+    movlw   0x37
+    movwf   ODCONA		; make RAx open drain    
 // </editor-fold>
 // <editor-fold defaultstate="collapsed" desc="PORTB">
     BANKSEL LATB		; Data Latch
